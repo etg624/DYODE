@@ -24,6 +24,7 @@ h2 {
 
 .desc-text {
     font-size: 0.75rem;
+    font-weight: 300;
 }
 
 .sm-text {
@@ -32,6 +33,12 @@ h2 {
 
 .thin-text {
     font-weight: 300;
+}
+
+.price {
+    color: var(--green);
+    font-family: 'Pacifico', sans-serif;
+
 }
 
 a {
@@ -156,7 +163,7 @@ a {
 
 .card {
     display: flex;
-    flex: 1 0 40%;
+    flex: 1 1 160px;
     flex-direction: column;
     margin: 0 1em 1em 0;
     /* max-height: 210px; */
@@ -177,4 +184,46 @@ a {
 .card h2{
     background: var(--green);
     text-align: center;
+}
+
+.new-arrivals {
+    margin: 1em;
+    
+}
+
+.arrivals-arrow-container {
+    display: flex;
+
+}
+
+.arrow {
+    height: 1em;
+    align-self: center;
+    margin-bottom: 2em;
+}
+
+.arrivals-container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+.arrivals-intro {
+    color: black;
+    text-align: center;
+}
+
+.product {
+    color: black;
+    width: 40%;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.product img {
+    width: 100%;
 }

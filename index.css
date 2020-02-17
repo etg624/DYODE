@@ -20,7 +20,6 @@ body {
 h2 {
     font-size: 1.25rem;
     font-family: 'Pacifico', sans-serif;
-    text-align: center;
 }
 
 .desc-text {
@@ -34,6 +33,7 @@ h2 {
 
 .thin-text {
     font-weight: 300;
+    letter-spacing: 1px;
 }
 
 .price {
@@ -183,6 +183,7 @@ a {
 .card h2{
     background: var(--green);
     padding: 0.3em;
+    text-align: center;
 }
 
 .new-arrivals {
@@ -191,6 +192,7 @@ a {
 
 .new-arrivals h2 {
     margin-bottom: 1em;
+    text-align: center;
 }
 
 .arrivals-arrow-container {
@@ -259,6 +261,7 @@ a {
 
 .social h2 {
     color: black;
+    text-align: center;
 }
 
 .social-img-container {
@@ -270,4 +273,49 @@ a {
 .social-img-container img {
     width: 30%;
     margin: 0.3em;
+}
+
+.contact {
+    background: var(--green);
+    padding: 1em;
+}
+
+.contact-intro h2 {
+    margin-bottom: 1em;
+}
+
+.contact-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.email-icon {
+    width: 1.5em;
+    margin-right: 0.3em;
+}
+
+.contact .thin-text {
+    text-align: center;
+}
+
+.text-input {
+    padding: 0.75em 0em 0.7em 0.75em;
+    width: 70%;
+}
+
+.text-input::placeholder {
+    font-size: 0.5rem;
+    color:  #929292;
+}
+
+.subscribe-btn {
+    padding: 0.5em;
+    font-size: 0.7rem;
+    font-family: 'Pacifico', sans-serif;
+    color: var(--white);
+    border: 1px solid  var(--white);
+    background: var(--green);
+    width: 25%;
 }

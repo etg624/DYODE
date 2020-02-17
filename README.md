@@ -1,3 +1,6 @@
+# View deployed page [here](https://heuristic-mestorf-17644d.netlify.com/)
+
+
 1. Describe how you would make a line of text in a homepage section editable from theme customization.
 * From your Shopify admin, in your theme editor go to Config > settings_schema.json
 * Add: 

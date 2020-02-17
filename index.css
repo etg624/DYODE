@@ -15,11 +15,23 @@
 body {
     font-family: 'Lato', sans-serif;
     color:#FFFFFF;
+    
 }
 
 h2 {
     font-size: 1.25rem;
+    font-weight: 500;
     font-family: 'Pacifico', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 300;
+}
+
+li {
+    list-style: none;
 }
 
 .desc-text {
@@ -42,10 +54,7 @@ h2 {
 
 }
 
-a {
-    text-decoration: none;
-    color: var(--white);
-}
+
 
 /* ====== End Typography ====== */
 
@@ -115,7 +124,7 @@ a {
     flex-direction: column;
     height: 50%;
     top: 25%;
-    left: 1.5em;
+    left: 1em;
     position: absolute;
 }
 
@@ -246,7 +255,7 @@ a {
     flex-direction: column;
     height: 50%;
     top: 25%;
-    right: 1.5em;
+    right: 0.9em;
     position: absolute;
 }
 
@@ -318,4 +327,40 @@ a {
     border: 1px solid  var(--white);
     background: var(--green);
     width: 25%;
+}
+
+
+/* ====== FOOTER ======= */
+
+.main-footer {
+    background: black;
+    padding: 1em 0 2.625em 3.125em;
+}
+
+.main-footer p {
+    margin-right: 3.125em;
+}
+
+.customer-service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-links {
+    display: flex;
+    width: 41%;
+    justify-content: space-between;
+}
+
+.company {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.6em 0;
 }

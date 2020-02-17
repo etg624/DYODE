@@ -1,7 +1,7 @@
 # View deployed page [here](https://heuristic-mestorf-17644d.netlify.com/)
 
 
-1. Describe how you would make a line of text in a homepage section editable from theme customization.
+### 1. Describe how you would make a line of text in a homepage section editable from theme customization.
 * From your Shopify admin, in your theme editor go to Config > settings_schema.json
 * Add: 
 ```
@@ -25,7 +25,7 @@
 * Click Save 
 
 
-2. How would you add the collection featured image as a banner on the collection page?
+### 2. How would you add the collection featured image as a banner on the collection page?
  
 * From your Shopify admin, go to Products > Collections.
 
@@ -34,7 +34,7 @@
      * If you're changing a collection's featured image, then click Change image to select a new image.
 * Click Save.
 
-3. Using liquid code and HTML, create a simple pagination container, "< 1 2 ... 5 >".
+### 3. Using liquid code and HTML, create a simple pagination container, "< 1 2 ... 5 >".
 
     ```
       {% if paginate.previous.is_link %}
@@ -52,7 +52,7 @@
     ```
 
 
-4. Using liquid code, access the product named "Blue T-Shirt". Store the id, title, handle, price, url, and image in variables.
+### 4. Using liquid code, access the product named "Blue T-Shirt". Store the id, title, handle, price, url, and image in variables.
     ```
             {% assign blueShirtId = all_products["blue-t-shirt"].id %}
             {% assign blueShirtTitle = all_products["blue-t-shirt"].title %}
@@ -61,7 +61,7 @@
             {% assign blueShirtUrl = all_products["blue-t-shirt"].url %}
             {% assign blueShirtImage = all_products["blue-t-shirt"].image %}
     ```
-5. Using liquid code, create a key:value array using the list below. Loop through the array. Upon key type, store the value in a variable to be used later.
+### 5. Using liquid code, create a key:value array using the list below. Loop through the array. Upon key type, store the value in a variable to be used later.
 fruit:apple
 vegetable:carrot
 cloth:t-shirt

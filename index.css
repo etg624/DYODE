@@ -261,7 +261,7 @@ li {
 
 .hero-2 {
     background-image: url('/Images/Hero-Image-2-Mobile.jpg');
-    background-position: center;
+    background-position: top;
 }
 
 .hero-2-intro {
@@ -364,8 +364,16 @@ li {
     padding: 1em 3.125em 2.625em 3.125em;
 }
 
-.main-footer p {
-    margin-right: 3.125em;
+.hidden {
+    display: none;
+}
+
+.show-plus::before {
+    content: '+'
+}
+
+.show-minus::before {
+    content: '-'
 }
 
 .customer-service {
@@ -485,9 +493,26 @@ li {
         
     }
 
+    .mobile-hide {
+        display: block;
+    }
+
+    .drop {
+        display: none;
+    }
+
     .footer-nav {
         flex-direction: row;
     }
+
+    .footer-nav li {
+        margin-right: 3em;
+    }
+
+    .footer-nav li:last-child {
+        margin-right: 0;
+    }
+
     .footer-nav h2, 
     .footer-nav li, 
     .footer-nav p {

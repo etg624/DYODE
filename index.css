@@ -14,8 +14,7 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    color:#FFFFFF;
-    
+    color:#FFFFFF; 
 }
 
 h2 {
@@ -32,6 +31,10 @@ a {
 
 li {
     list-style: none;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 .desc-text {
@@ -51,12 +54,14 @@ li {
 .price {
     color: var(--green);
     font-family: 'Pacifico', sans-serif;
-
 }
 
 
 
 /* ====== End Typography ====== */
+
+
+
 
 
 /* ====== Header ======= */
@@ -76,8 +81,12 @@ li {
     align-items: center;
 }
 
+.nav-links {
+    display: none;
+}
+
 .burger {
-    width: 12%;
+    width: 2.5em;
 }
 
 .line {
@@ -93,7 +102,9 @@ li {
 }
 
 .logo {
-       width: 60%;
+       width: 2.8em;
+       height: 3.375em;
+       object-fit: contain;
 }
 
 
@@ -106,12 +117,15 @@ li {
 /* ====== End Header ======= */
 
 
+
+
 /* ====== Hero ======= */
 
 .hero {
     background-image: url('/Images/Hero-Image-1-Mobile.jpg');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-position: center;
+    background-size: cover;
     min-height: 227px;
     display: flex;
     flex-direction: column;
@@ -122,7 +136,7 @@ li {
 .hero-intro {
     display: flex;
     flex-direction: column;
-    height: 50%;
+    /* height: 50%; */
     top: 25%;
     left: 1em;
     position: absolute;
@@ -144,6 +158,7 @@ li {
     align-self: center;
     margin-top: auto;
     width: 20%;
+    max-width: 150px;
     margin-bottom: 1em;
 }
 
@@ -162,7 +177,9 @@ li {
 
 /* ====== End Hero ======= */
 
-/* ====== Body ======= */
+
+
+/* ====== MAIN ======= */
 
 
 .product-catagories {
@@ -231,8 +248,7 @@ li {
     min-width: 150px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center; 
 }
 
 .product img {
@@ -242,7 +258,7 @@ li {
 .hero-2 {
     background-image: url('/Images/Hero-Image-2-Mobile.jpg');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     min-height: 227px;
     display: flex;
     flex-direction: column;
@@ -286,18 +302,19 @@ li {
 
 .contact {
     background: var(--green);
-    padding: 1em;
-}
-
-.contact-intro h2 {
-    margin-bottom: 1em;
+    padding: 2em 1em;
 }
 
 .contact-intro {
     display: flex;
     flex-direction: column;
+    align-items: center; 
+}
+
+.form-text-container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 1em;
 }
 
 .email-icon {
@@ -305,12 +322,21 @@ li {
     margin-right: 0.3em;
 }
 
-.contact .thin-text {
+.form-text-container p {
     text-align: center;
+    margin: 2em 0;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    width: 100%;
 }
 
 .text-input {
-    padding: 0.75em 0em 0.7em 0.75em;
+    line-height: 0;
+    padding: 0.75rem;
     width: 70%;
 }
 
@@ -320,21 +346,23 @@ li {
 }
 
 .subscribe-btn {
-    padding: 0.5em;
     font-size: 0.7rem;
     font-family: 'Pacifico', sans-serif;
     color: var(--white);
     border: 1px solid  var(--white);
     background: var(--green);
-    width: 25%;
+    width: 28%;
+    
 }
+
+/* ======= END MAIN ======= */
 
 
 /* ====== FOOTER ======= */
 
 .main-footer {
     background: black;
-    padding: 1em 0 2.625em 3.125em;
+    padding: 1em 3.125em 2.625em 3.125em;
 }
 
 .main-footer p {
@@ -352,6 +380,12 @@ li {
     flex-direction: column;
 }
 
+.footer-nav li {
+    display: flex;
+    flex-direction: column;
+
+}
+
 .social-links {
     display: flex;
     width: 41%;
@@ -362,5 +396,94 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0.6em 0;
+    
+}
+/* ======= END FOOTER ======== */ 
+
+
+/* ====== MEDIA QUERIES ======= */
+
+@media screen and (min-width: 800px) {
+    :root {
+        font-size: 2rem
+    }
+
+    .header-nav {
+        justify-content: center;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin-left: 1em;
+    }
+
+    .burger {
+        display: none;
+    }
+    .shopping-cart {
+        display: none;
+    }
+
+    .hero {
+        background-image: url('/Images/Hero-Image-1.jpg');
+        height: 100vh;
+    }
+
+    .card img {
+        height: 569px;
+    }
+
+    .hero-2 {
+        background-image: url('Images/Hero\ Image\ 2.jpg');
+        height: 100vh;
+    }
+    .contact-intro {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-intro h2 {
+        margin: 0;
+    }
+
+    .form-text-container {
+        flex-direction: row;
+        align-items: center;
+        margin: 0 auto;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+    }
+    .form-text-container p {
+        max-width: 600px;
+        font-size: 0.63rem;
+        text-align: left;
+        /* margin-right: 2em; */
+    }
+
+    .subscribe-form {
+        width: 35%;
+        flex: 1 1 465px;
+        
+    }
+
+    .footer-nav {
+        flex-direction: row;
+    }
+    .footer-nav h2, 
+    .footer-nav li, 
+    .footer-nav p {
+        font-size: 0.5rem;
+        padding-bottom: 0.5em;
+    }
+
+    .follow-us {
+        margin-left: auto;
+    }
+    .social-links {
+        width: 135%;
+    }
 }

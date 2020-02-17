@@ -20,6 +20,7 @@ body {
 h2 {
     font-size: 1.25rem;
     font-family: 'Pacifico', sans-serif;
+    text-align: center;
 }
 
 .desc-text {
@@ -158,19 +159,17 @@ a {
 .product-catagories {
     display: flex;
     flex-wrap: wrap;
-    padding: 1em;
+    justify-content: space-between;
+    margin-right: 1em;
+    margin-top: 1em;
 }
 
 .card {
     display: flex;
     flex: 1 1 160px;
     flex-direction: column;
-    margin: 0 1em 1em 0;
-    /* max-height: 210px; */
-}
-
-.card + .card {
-    margin: 0;
+    margin-left: 1em;
+    margin-bottom: 1em;
 }
 
 .card img {
@@ -178,22 +177,24 @@ a {
     object-fit: cover;
     object-position: 0% 0%;
     display: block;
-    max-height: 175px;
+    height: 175px;
 }
 
 .card h2{
     background: var(--green);
-    text-align: center;
+    padding: 0.3em;
 }
 
 .new-arrivals {
-    margin: 1em;
-    
+    margin: 1em;    
+}
+
+.new-arrivals h2 {
+    margin-bottom: 1em;
 }
 
 .arrivals-arrow-container {
     display: flex;
-
 }
 
 .arrow {
@@ -211,7 +212,6 @@ a {
 
 .arrivals-intro {
     color: black;
-    text-align: center;
 }
 
 .product {
@@ -226,4 +226,48 @@ a {
 
 .product img {
     width: 100%;
+}
+
+.hero-2 {
+    background-image: url('/Images/Hero-Image-2-Mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 227px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-2-intro {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    top: 25%;
+    right: 1.5em;
+    position: absolute;
+}
+
+
+.green {
+    background-color: var(--green);
+}
+
+.social {
+    padding: 2em 1em 2em 1.2em;
+}
+
+.social h2 {
+    color: black;
+}
+
+.social-img-container {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.social-img-container img {
+    width: 30%;
+    margin: 0.3em;
 }

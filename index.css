@@ -29,6 +29,10 @@ a {
     font-weight: 300;
 }
 
+a:hover {
+    cursor: pointer;
+}
+
 li {
     list-style: none;
 }
@@ -49,6 +53,10 @@ li {
 .thin-text {
     font-weight: 300;
     letter-spacing: 1px;
+}
+
+li a:hover {
+    text-decoration: underline;
 }
 
 .price {

@@ -38,11 +38,11 @@
           <a href="{{paginate.previous_url}}"> < </a>
       {% endif %}
       {% assign count = paginate.pages %}
-      {% for part in (1..count) %}
-          <li {% if paginate.current_page == part %}class="active"{% endif %}>
-            <a href="{{ collection.url }}?page={{ forloop.index }}">{{ forloop.index }}</a>
-          </li>
-        {% endfor %}
+        {% for part in (1..count) %}
+            <li>
+              <a href="{{ collection.url }}?page={{ forloop.index }}">{{ forloop.index }}</a>
+            </li>
+          {% endfor %}
        {% if paginate.next.is_link %}
           <a href="{{paginate.previous_url}}"> > </a>
       {% endif %}

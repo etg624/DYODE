@@ -87,7 +87,7 @@ li a:hover {
 .header-nav {
     background: var(--green);
     width: 100vw;
-    padding: 0 0.7em 0 1.25em; 
+    padding: 0 1.25em 0 1.25em; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -630,4 +630,3 @@ li a:hover {
 }
 
 
-/* ======= IPAD PRO ======= */

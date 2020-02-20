@@ -450,6 +450,10 @@ li a:hover {
         font-size: 18px;
     }
 
+    .specials {
+        font-size: 0.65em
+    }
+
     .header-nav {
         justify-content: center;
         padding: 0;
